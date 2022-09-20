@@ -273,9 +273,9 @@ x<!DOCTYPE html>
 </head>
 <body>
 
-	<button id="btn">Generar PDF</button>
+	<button id="btn">Guardar PDF</button>
 
-<div class="bee-page-container" id="page" style="border:1px solid black;">
+<div class="bee-page-container" id="page" style="border:1px solid black; width: 1450; height: 890;">
 <div class="bee-row bee-row-1">
 <div class="bee-row-content">
 <div class="bee-col bee-col-1 bee-col-w12">
@@ -469,23 +469,16 @@ x<!DOCTYPE html>
 	btn.addEventListener('click', function(){
 	html2PDF(page, {
 		jsPDF: {
-		format: [1940, 1156],
+		format: [1460, 901],
 		orientation: 'landscape'
-		},
-		html2canvas: {
-			imageTimeout: 15000,
-			logging: true,
-			useCORS: false,
-			contentWidth: 1900,
-      		contentHeight: 1126,
 		},
 		imageType: 'image/jpeg',
 		imageQuality: 1,
 		margin: {
-			top: 10,
-			right: 10,
-			bottom: 10,
-			left: 10,
+			top: 5,
+			right: 5,
+			bottom: 5,
+			left: 5,
 		},
 		imageType: 'image/jpeg',
 		output: 'generate.pdf'
