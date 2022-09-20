@@ -275,7 +275,7 @@ x<!DOCTYPE html>
 
 	<button id="btn">Generate</button>
 
-<div class="bee-page-container" id="page">
+<div class="bee-page-container" id="page" style="border:1px solid black;">
 <div class="bee-row bee-row-1">
 <div class="bee-row-content">
 <div class="bee-col bee-col-1 bee-col-w12">
@@ -470,6 +470,21 @@ x<!DOCTYPE html>
 	html2PDF(page, {
 		jsPDF: {
 		format: 'a4',
+		},
+		html2canvas: {
+			imageTimeout: 15000,
+			logging: true,
+			useCORS: false,
+			contentWidth = 800;
+      		contentHeight = 600;
+		},
+		imageType: 'image/jpeg',
+		imageQuality: 1,
+		margin: {
+			top: 10,
+			right: 10,
+			bottom: 10,
+			left: 10,
 		},
 		imageType: 'image/jpeg',
 		output: 'generate.pdf'
