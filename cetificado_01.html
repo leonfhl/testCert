@@ -1,0 +1,481 @@
+x<!DOCTYPE html>
+
+<html>
+<head>
+<title></title>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="website" property="og:type"/>
+<meta content="" property="og:description"/>
+<meta content="https://h5tea2ps6j.preview-postedstuff.com/V2-lGbd-2uzv-Drqv-SSNZ/" property="og:url"/>
+<meta content="https://pro-bee-beepro-thumbnail.getbee.io/messages/861782/845880/1754866/8098998_large.jpg" property="og:image"/>
+<meta content="" property="og:title"/>
+<meta content="" name="description"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width" name="viewport"/>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"/>
+
+<script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.7/dist/html2canvas.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jspdf-html2canvas@latest/dist/jspdf-html2canvas.min.js"></script>
+
+
+<style>
+		.bee-row,
+		.bee-row-content {
+			position: relative
+		}
+
+		.bee-page-container,
+		.bee-row-2,
+		.bee-row-2 .bee-row-content {
+			background-size: auto;
+			background-repeat: no-repeat
+		}
+
+		.bee-page-container,
+		.bee-row-1,
+		.bee-row-2,
+		.bee-row-2 .bee-row-content,
+		.bee-row-3,
+		.bee-row-4,
+		.bee-row-5,
+		.bee-row-5 .bee-row-content,
+		.bee-row-6,
+		.bee-row-7,
+		.bee-row-8 {
+			background-repeat: no-repeat
+		}
+
+		body {
+			background-color: transparent;
+			color: #000;
+			font-family: Arial, Helvetica Neue, Helvetica, sans-serif
+		}
+
+		.bee-page-container {
+			background-image: none;
+			background-position: top left
+		}
+
+		.bee-row-4 .bee-col-2 .bee-block-3 a,
+		.bee-row-6 .bee-col-2 .bee-block-1 a,
+		a {
+			color: #8a3c90
+		}
+
+		* {
+			box-sizing: border-box
+		}
+
+		body,
+		p {
+			margin: 0
+		}
+
+		.bee-row-content {
+			max-width: 1440px;
+			margin: 0 auto;
+			display: flex
+		}
+
+		.bee-row-content .bee-col-w1 {
+			flex-basis: 8%
+		}
+
+		.bee-row-content .bee-col-w2 {
+			flex-basis: 17%
+		}
+
+		.bee-row-content .bee-col-w4 {
+			flex-basis: 33%
+		}
+
+		.bee-row-content .bee-col-w6 {
+			flex-basis: 50%
+		}
+
+		.bee-row-content .bee-col-w8 {
+			flex-basis: 67%
+		}
+
+		.bee-row-content .bee-col-w12 {
+			flex-basis: 100%
+		}
+
+		.bee-icon .bee-icon-label-right a {
+			text-decoration: none
+		}
+
+		.bee-divider,
+		.bee-image {
+			overflow: auto
+		}
+
+		.bee-divider .center,
+		.bee-image .bee-center {
+			margin: 0 auto
+		}
+
+		.bee-row-2 .bee-col-2 .bee-block-3,
+		.bee-row-3 .bee-col-2 .bee-block-2,
+		.bee-row-3 .bee-col-4 .bee-block-2,
+		.bee-row-5 .bee-col-1 .bee-block-2,
+		.bee-row-5 .bee-col-2 .bee-block-2,
+		.bee-row-5 .bee-col-3 .bee-block-1,
+		.bee-row-5 .bee-col-4 .bee-block-2,
+		.bee-row-6 .bee-col-1 .bee-block-1 {
+			width: 100%
+		}
+
+		.bee-icon {
+			display: inline-block;
+			vertical-align: middle
+		}
+
+		.bee-icon .bee-content {
+			display: flex;
+			align-items: center
+		}
+
+		.bee-image img {
+			display: block;
+			width: 100%
+		}
+
+		.bee-paragraph,
+		.bee-text {
+			overflow-wrap: anywhere
+		}
+
+		@media (max-width:768px) {
+			.bee-row-content:not(.no_stack) {
+				display: block
+			}
+		}
+
+		.bee-row-1 .bee-row-content,
+		.bee-row-3 .bee-row-content,
+		.bee-row-4 .bee-row-content,
+		.bee-row-6 .bee-row-content,
+		.bee-row-7 .bee-row-content,
+		.bee-row-8 .bee-row-content {
+			background-repeat: no-repeat;
+			color: #000
+		}
+
+		.bee-row-1 .bee-col-1,
+		.bee-row-2 .bee-col-1,
+		.bee-row-2 .bee-col-2,
+		.bee-row-2 .bee-col-3,
+		.bee-row-3 .bee-col-1,
+		.bee-row-3 .bee-col-2,
+		.bee-row-3 .bee-col-3,
+		.bee-row-3 .bee-col-4,
+		.bee-row-3 .bee-col-5,
+		.bee-row-4 .bee-col-1,
+		.bee-row-4 .bee-col-2,
+		.bee-row-4 .bee-col-3,
+		.bee-row-5 .bee-col-1,
+		.bee-row-5 .bee-col-2,
+		.bee-row-5 .bee-col-3,
+		.bee-row-5 .bee-col-4,
+		.bee-row-5 .bee-col-5,
+		.bee-row-6 .bee-col-1,
+		.bee-row-6 .bee-col-2,
+		.bee-row-6 .bee-col-3,
+		.bee-row-7 .bee-col-1,
+		.bee-row-8 .bee-col-1 {
+			padding-bottom: 5px;
+			padding-top: 5px
+		}
+
+		.bee-row-2 .bee-row-content {
+			color: #000
+		}
+
+		.bee-row-2 .bee-col-2 .bee-block-1 {
+			padding-bottom: 25px;
+			width: 100%
+		}
+
+		.bee-row-2 .bee-col-2 .bee-block-2,
+		.bee-row-4 .bee-col-2 .bee-block-1,
+		.bee-row-5 .bee-col-2 .bee-block-3,
+		.bee-row-5 .bee-col-4 .bee-block-3 {
+			padding: 10px
+		}
+
+		.bee-row-3 .bee-col-3 .bee-block-2 {
+			padding-bottom: 10px;
+			padding-left: 10px;
+			padding-top: 10px
+		}
+
+		.bee-row-4 .bee-col-2 .bee-block-2,
+		.bee-row-4 .bee-col-2 .bee-block-4 {
+			padding-bottom: 25px;
+			padding-left: 10px;
+			padding-top: 25px
+		}
+
+		.bee-row-4 .bee-col-2 .bee-block-3,
+		.bee-row-6 .bee-col-2 .bee-block-1 {
+			padding: 15px 40px
+		}
+
+		.bee-row-5 .bee-row-content {
+			border-radius: 0;
+			color: #000
+		}
+
+		.bee-row-5 .bee-col-2 .bee-block-4,
+		.bee-row-5 .bee-col-4 .bee-block-4 {
+			padding-left: 10px
+		}
+
+		.bee-row-8 .bee-col-1 .bee-block-1 {
+			color: #9d9d9d;
+			font-family: inherit;
+			font-size: 15px;
+			padding-bottom: 5px;
+			padding-top: 5px;
+			text-align: center
+		}
+
+		.bee-row-4 .bee-col-2 .bee-block-3,
+		.bee-row-6 .bee-col-2 .bee-block-1 {
+			color: #53565a;
+			direction: ltr;
+			font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-weight: 400;
+			letter-spacing: 0;
+			line-height: 120%;
+			text-align: center
+		}
+
+		.bee-row-4 .bee-col-2 .bee-block-3 {
+			font-size: 17px
+		}
+
+		.bee-row-4 .bee-col-2 .bee-block-3 p:not(:last-child),
+		.bee-row-6 .bee-col-2 .bee-block-1 p:not(:last-child) {
+			margin-bottom: 17px
+		}
+
+		.bee-row-6 .bee-col-2 .bee-block-1 {
+			font-size: 14px
+		}
+
+		.bee-row-8 .bee-col-1 .bee-block-1 .bee-icon-image {
+			padding: 5px 6px 5px 5px
+		}
+	</style>
+</head>
+<body>
+
+	<button id="btn">Generate</button>
+
+<div class="bee-page-container" id="page">
+<div class="bee-row bee-row-1">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:35px;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-2">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w2">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:100px;"></div>
+</div>
+</div>
+<div class="bee-col bee-col-2 bee-col-w8">
+<div class="bee-block bee-block-1 bee-image"><img crossOrigin="anonymous" alt="I'm an image" class="bee-center bee-fixedwidth" src="Logo_Acreditta_Gris.png" style="max-width:240px;"/></div>
+<div class="bee-block bee-block-2 bee-text">
+<div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #555555;">
+<p style="font-size: 16px; line-height: 19px; text-align: center; letter-spacing: 10px;"><span style="font-size: 72px; color: #000000; line-height: 86px;"><strong style="">CERTIFICADO</strong></span></p>
+</div>
+</div>
+<div class="bee-block bee-block-3 bee-image"><img crossOrigin="anonymous" alt="" class="bee-center bee-fixedwidth" src="Imagen_00.png" style="max-width:518px;"/></div>
+</div>
+<div class="bee-col bee-col-3 bee-col-w2">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:100px;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-3">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w2">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:30px;"></div>
+</div>
+</div>
+<div class="bee-col bee-col-2 bee-col-w1">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:60px;"></div>
+</div>
+<div class="bee-block bee-block-2 bee-image"><img crossOrigin="anonymous" alt="I'm an image" class="bee-center bee-fixedwidth" src="Imagen_01.png" style="max-width:30px;"/></div>
+</div>
+<div class="bee-col bee-col-3 bee-col-w6">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:30px;"></div>
+</div>
+<div class="bee-block bee-block-2 bee-text">
+<div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #555555;">
+<p style="font-size: 16px; line-height: 19px; text-align: center; letter-spacing: 5px;"><span style="font-size: 34px; color: #000000; line-height: 40px;"><strong style="">LAURA DANIELA MUÑOZ CLAVIJO</strong></span></p>
+</div>
+</div>
+</div>
+<div class="bee-col bee-col-4 bee-col-w1">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:60px;"></div>
+</div>
+<div class="bee-block bee-block-2 bee-image"><img crossOrigin="anonymous" alt="I'm an image" class="bee-center bee-fixedwidth" src="fece084a-a12f-4463-93f5-bfa5a0a49b80.png" style="max-width:30px;"/></div>
+</div>
+<div class="bee-col bee-col-5 bee-col-w2">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:30px;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-4">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w2">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:100px;"></div>
+</div>
+</div>
+<div class="bee-col bee-col-2 bee-col-w8">
+<div class="bee-block bee-block-1 bee-divider">
+<div class="center bee-separator" style="border-top:2px solid #000000;width:90%;"></div>
+</div>
+<div class="bee-block bee-block-2 bee-text">
+<div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #555555;">
+<p style="font-size: 16px; line-height: 19px; text-align: center; letter-spacing: 5px;"><span style="font-size: 30px; color: #000000; line-height: 36px;"><strong style="">CREDENCIALES DIGITALES</strong></span></p>
+</div>
+</div>
+<div class="bee-block bee-block-3 bee-paragraph">
+<p><span style="color: #53565a;">La persona acreditada con esta insignia demuestra un nivel de conocimiento medio sobre el tema de credenciales digitales siendo capaz de aportar contenido técnico en sesiones con clientes y en eventos abiertos al público.</span></p>
+</div>
+<div class="bee-block bee-block-4 bee-text">
+<div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #53565a;">
+<p style="font-size: 16px; line-height: 19px; text-align: center; letter-spacing: normal;"><span style="font-size: 17px; color: #53565a; line-height: 20px;">EMITIDA EL 23-04-2022</span></p>
+</div>
+</div>
+</div>
+<div class="bee-col bee-col-3 bee-col-w2">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:100px;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-5">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w2">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:30px;"></div>
+</div>
+<div class="bee-block bee-block-2 bee-image"><img crossOrigin="anonymous" alt="I'm an image" class="bee-center bee-fixedwidth" src="qrcode_28952134_.png" style="max-width:156px;"/></div>
+</div>
+<div class="bee-col bee-col-2 bee-col-w2">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:30px;"></div>
+</div>
+<div class="bee-block bee-block-2 bee-image"><img crossOrigin="anonymous" alt="I'm an image" class="bee-center bee-fixedwidth" src="Firma_Certificado.png" style="max-width:120px;"/></div>
+<div class="bee-block bee-block-3 bee-divider">
+<div class="center bee-separator" style="border-top:2px solid #000000;width:90%;"></div>
+</div>
+<div class="bee-block bee-block-4 bee-text">
+<div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #53565a;">
+<p style="font-size: 16px; line-height: 19px; text-align: center; letter-spacing: normal;"><strong style=""><span style="font-size: 17px; color: #000000; line-height: 20px;">FIRMA</span></strong></p>
+</div>
+</div>
+</div>
+<div class="bee-col bee-col-3 bee-col-w4">
+<div class="bee-block bee-block-1 bee-image"><img crossOrigin="anonymous" alt="I'm an image" class="bee-center bee-fixedwidth" src="Badged_Forge.png" style="max-width:192px;"/></div>
+</div>
+<div class="bee-col bee-col-4 bee-col-w2">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:30px;"></div>
+</div>
+<div class="bee-block bee-block-2 bee-image"><img crossOrigin="anonymous" alt="I'm an image" class="bee-center bee-fixedwidth" src="560b3091-12ae-4b3e-aeb4-684f913761dc.png" style="max-width:120px;"/></div>
+<div class="bee-block bee-block-3 bee-divider">
+<div class="center bee-separator" style="border-top:2px solid #000000;width:90%;"></div>
+</div>
+<div class="bee-block bee-block-4 bee-text">
+<div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #53565a;">
+<p style="font-size: 16px; line-height: 19px; text-align: center; letter-spacing: normal;"><strong style=""><span style="font-size: 17px; color: #000000; line-height: 20px;">FIRMA</span></strong></p>
+</div>
+</div>
+</div>
+<div class="bee-col bee-col-5 bee-col-w2">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:30px;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-6">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w2">
+<div class="bee-block bee-block-1 bee-image"><img crossOrigin="anonymous" alt="" class="bee-center bee-fixedwidth" src="Logos-Acreditta-Color.png" style="max-width:132px;"/></div>
+</div>
+<div class="bee-col bee-col-2 bee-col-w8">
+<div class="bee-block bee-block-1 bee-paragraph">
+<p><span style="color: #53565a;">La persona acreditada con esta insignia demuestra un nivel de conocimiento medio sobre el tema de credenciales digitales siendo capaz de aportar contenido técnico en sesiones con clientes y en eventos abiertos al público.</span></p>
+</div>
+</div>
+<div class="bee-col bee-col-3 bee-col-w2">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:50px;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-7">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:35px;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-8">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-icons" id="beepro-locked-footer">
+<div class="bee-icon">
+<div class="bee-content">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script type="text/javascript">
+	let btn = document.getElementById('btn');
+	let page = document.getElementById('page');
+
+	btn.addEventListener('click', function(){
+	html2PDF(page, {
+		jsPDF: {
+		format: 'a4',
+		},
+		imageType: 'image/jpeg',
+		output: 'generate.pdf'
+	});
+	});
+</script>
+
+</body>
+</html>
